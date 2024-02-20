@@ -1,0 +1,18 @@
+/*Make logo larger*/
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.centered-override {
+	text-align: center;
+}
+
+/*More round corners on cards*/
+.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {
+	border-radius: 0.25rem
+}

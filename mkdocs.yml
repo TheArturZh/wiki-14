@@ -1,4 +1,4 @@
-site_name: SS220 SS14 Wiki
+site_name: SS220 - Space Station 14 Wiki
 repo_url: https://github.com/SerbiaStrong-220/wiki-14
 repo_name: SerbiaStrong-220/wiki-14
 copyright: Copyright &copy; 2023 SS220. Written and maintained by SS220 community.
@@ -7,13 +7,17 @@ theme:
     name: material
     language: ru
     locale: ru
+    logo: resources/logo.svg
+    favicon: resources/logo.svg
     palette:
         # Palette toggle for dark mode
         - scheme: slate
+          primary: black
           toggle:
             icon: material/brightness-4
             name: Switch to light mode
         - scheme: default
+          primary: blue grey
           toggle:
             icon: material/brightness-7
             name: Switch to dark mode
@@ -24,6 +28,7 @@ theme:
     - search.share
     - navigation.footer
     - navigation.sections
+    - navigation.path
 
 plugins:
   - search
@@ -38,9 +43,11 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/overrides.css
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
   - md_in_html
